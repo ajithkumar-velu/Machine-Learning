@@ -122,6 +122,9 @@ print(a.encode())
 
 '''
 
+
+
+'''
 num = [1, 2, 3, 4]
 count = 0
 for i in num:
@@ -134,4 +137,25 @@ print(count)
         
         
 for i in range(5):
-    print(i)g
+    print(i)
+
+'''
+
+# pass argument in lambda
+x = lambda f: f +5
+print(x(10))
+
+# two argiuments
+
+n = lambda d, f : d * f
+print(n(2, 3))
+
+
+class person:
+    def __init__(self, name, age):
+        self.name =name
+        self.age = age
+    def __str__(self):
+        return f"{self.name}({self.age})"
+a = person("arun", 'hari')
+print(a)
